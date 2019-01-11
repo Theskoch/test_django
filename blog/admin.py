@@ -9,6 +9,4 @@ class NewsAdmin(SummernoteModelAdmin):
 
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
-
-
 admin.site.register(Post,NewsAdmin)
