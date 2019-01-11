@@ -25,6 +25,10 @@ SECRET_KEY = '=xq7u2e%9z1fh=0i4u-t5p=qjw3aqc290rraaj!&r(2sr0++h#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#
+
+#
+
 ALLOWED_HOSTS = ['127.0.0.1', 'TheSkoCh.pythonanywhere.com']
 
 
@@ -37,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'blog',
+    'django_summernote',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -121,4 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
